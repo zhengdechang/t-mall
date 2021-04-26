@@ -1,0 +1,94 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor":"#fe0024",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/sort/sort",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"navigationBarBackgroundColor":"#fe0024",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/shopping/shopping",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"navigationBarBackgroundColor":"#fe0024",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor":"#fe0024",
+				"navigationBarTextStyle":"white"
+			}
+		}
+	    ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索",
+				"navigationBarBackgroundColor":"#fe0024",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/details/details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	// 配置底部导航栏
+	"tabBar": {
+		"color":"#333333",
+		"selectedColor":"#f76e15",
+		"borderStyle":"black",
+		"backgroundColor":"#FFFFFF",
+		"list": [
+			{
+				"text":"首页",
+				"iconPath":"static/tab/tab-a.png",
+				"selectedIconPath":"static/tab/tab-b.png",
+				"pagePath":"pages/index/index"
+			},
+			{
+				"text":"分类",
+				"iconPath":"static/tab/tab-c.png",
+				"selectedIconPath":"static/tab/tab-d.png",
+				"pagePath":"pages/sort/sort"
+			},
+			{
+				"text":"购物车",
+				"iconPath":"static/tab/tab-e.png",
+				"selectedIconPath":"static/tab/tab-f.png",
+				"pagePath":"pages/shopping/shopping"
+			},
+			{
+				"text":"我的",
+				"iconPath":"static/tab/tab-g.png",
+				"selectedIconPath":"static/tab/tab-h.png",
+				"pagePath":"pages/my/my"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
