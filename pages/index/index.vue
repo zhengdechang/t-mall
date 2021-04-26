@@ -39,10 +39,7 @@
 			Loading,
 		},
 		created() {
-			this.getbanner()
-			this.getrecom()
-			this.getbillboard()
-			this.getcommodcrad(this.page)
+			this.init()
 		},
 		onReachBottom() {
 			this.$refs.Loading.loAd({
@@ -52,6 +49,12 @@
 			this.PullUp(this.page)
 		},
 		methods: {
+		   init(){
+				this.getbanner()
+				this.getrecom()
+				this.getbillboard()
+				this.getcommodcrad(this.page)
+		   },
 		   getbanner(){
 				getBanner().then(res =>{
 					this.banner = res.data

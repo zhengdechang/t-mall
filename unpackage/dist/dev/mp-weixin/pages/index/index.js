@@ -171,10 +171,7 @@ var _instance = __webpack_require__(/*! ../../networks/instance.js */ 17);functi
     Loading: Loading },
 
   created: function created() {
-    this.getbanner();
-    this.getrecom();
-    this.getbillboard();
-    this.getcommodcrad(this.page);
+    this.init();
   },
   onReachBottom: function onReachBottom() {
     this.$refs.Loading.loAd({
@@ -184,6 +181,12 @@ var _instance = __webpack_require__(/*! ../../networks/instance.js */ 17);functi
     this.PullUp(this.page);
   },
   methods: {
+    init: function init() {
+      this.getbanner();
+      this.getrecom();
+      this.getbillboard();
+      this.getcommodcrad(this.page);
+    },
     getbanner: function getbanner() {var _this = this;
       (0, _instance.getBanner)().then(function (res) {
         _this.banner = res.data;
