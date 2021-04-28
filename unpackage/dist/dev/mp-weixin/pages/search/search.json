@@ -2,5 +2,8 @@
   "navigationBarTitleText": "搜索",
   "navigationBarBackgroundColor": "#fe0024",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "loading": "/pages/components/loading",
+    "commodity": "/pages/components/commodity"
+  }
 }

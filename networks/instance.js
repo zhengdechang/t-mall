@@ -11,3 +11,5 @@ export const getRecom = () => get(`${baseURL}/recom`)
 export const getBillboard = () => get(`${baseURL}/billboard`)
 //卡片
 export const getCommodcrad = (page) => get(`${baseURL}/commodcrad?page=${page}`)
+//搜索接口
+export const getSearch = (searchkey,page) => get(`${baseURL}/search?keyword=${searchkey}&page=${page}`)

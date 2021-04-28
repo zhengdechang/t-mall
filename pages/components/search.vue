@@ -24,9 +24,9 @@
 			</view>
 		</view>
 		<!-- 展示内容   卡片流-->
-		<Commodity :commodityData="commodityData"></Commodity>
+		<Com :commodityData="commodityData"></Com>
 		<!-- 上拉加载 -->
-		<Loading ref="loading"></Loading>
+		<Loadings ref="loading"></Loadings>
 		<!-- 没有搜索结果 -->
 		<view class="empty-cart" v-if="searchno">
 			<image src="../../static/search/sousuono.svg" mode="widthFix"></image>
@@ -37,8 +37,8 @@
 
 <script>
 	import {getSearch} from '../../networks/instance.js'
-	import Commodity from '../components/commodity.vue'
-	import Loading from '../components/loading.vue'
+	import Com from '../components/com.vue'
+	import Loadings from '../components/loading.vue'
 	export default {
 		data() {
 			return {
@@ -53,10 +53,6 @@
 		},
 		mounted() {
 			this.getStorage();
-		},
-		components:{
-			Loading,
-			Commodity,
 		},
 		onReachBottom() {
 			this.$refs.loading.loAd({
@@ -105,7 +101,7 @@
 			},
 			// 清除搜索历史
 			removeStorage() {
-				uni.removeStorageSync('search_key')
+				uni.removeStorageSync('srarch_key')
 				this.getStorage()
 			},
 			// 搜索历史的搜索
@@ -115,10 +111,10 @@
 				this.searchData(item,this.page)
 			},
 			//请求搜索接口
-			searchData(searchkey,page,idn){
+			searchData(searchkey,page,idn='01'){
 				this.searchlastkey = searchkey;
 				getSearch(searchkey,page).then(res =>{
-					if(idn == '02'){
+					if(idn = '02'){
 						if(res.data.length){
 							this.commodityData = [...this.commodityData,...res.data]
 						}else{

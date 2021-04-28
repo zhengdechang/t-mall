@@ -5,7 +5,7 @@
 		<Purchase :recomData="recomData"></Purchase>
 		<Rank :rankData='rankData'></Rank>
 		<Commodity :commodityData='commodityData'></Commodity>
-		<Loading ref="Loading"></Loading>
+		<Loading ref="loading"></Loading>
 	</view>
 </template>
 
@@ -14,8 +14,8 @@
 	import Swiper from './component/swiper.vue'
 	import Purchase from './component/purchase.vue'
 	import Rank from './component/rank.vue'
-	import Commodity from '../components/commodity.vue'
 	import Loading from '../components/loading.vue'
+	import Commodity from '../components/commodity.vue'
 	import {getBanner,getRecom,getBillboard,getCommodcrad} from '../../networks/instance.js'
 	export default {
 		data() {
@@ -42,8 +42,8 @@
 			this.init()
 		},
 		onReachBottom() {
-			this.$refs.Loading.loAd({
-				loading: true
+			this.$refs.loading.loAd({
+				loading: true,
 			})
 			this.page++
 			this.PullUp(this.page)
@@ -79,7 +79,7 @@
 		   PullUp(page){
 			   getCommodcrad(page).then(res =>{
 					if(!res.data.length){
-						this.$refs.Loading.loAd({loading:true, tips:'没有更多了',picture:false})
+						this.$refs.loading.loAd({loading:true, tips:'没有更多了',picture:false})
 						// this.$refs.loadon.loAd({whether:true, tips:'没有更多了',picture:false})
 					}else{
 						this.commodityData = [...this.commodityData, ...res.data]
