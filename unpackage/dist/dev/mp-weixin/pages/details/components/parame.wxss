@@ -1,0 +1,108 @@
+/* 透明背景动画 */
+.anim.data-v-b57d604a {
+	-webkit-animation: implement-data-v-b57d604a;
+	        animation: implement-data-v-b57d604a;
+	/*动画名称*/
+	-webkit-animation-duration: 0.4s;
+	        animation-duration: 0.4s;
+	/*动画持续时间*/
+}
+@-webkit-keyframes implement-data-v-b57d604a {
+0% {
+		opacity: 0;
+}
+50% {
+		opacity: 0.5;
+}
+100% {
+		opacity: 1;
+}
+}
+@keyframes implement-data-v-b57d604a {
+0% {
+		opacity: 0;
+}
+50% {
+		opacity: 0.5;
+}
+100% {
+		opacity: 1;
+}
+}
+/* 底部淡入 */
+.coup-anim.data-v-b57d604a {
+	-webkit-animation: fadeIn-data-v-b57d604a 0.4s .2s ease both;
+	        animation: fadeIn-data-v-b57d604a 0.4s .2s ease both;
+}
+@-webkit-keyframes fadeIn-data-v-b57d604a {
+0% {
+		opacity: 0;
+		-webkit-transform: translateY(400rpx);
+		        transform: translateY(400rpx)
+}
+100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0)
+}
+}
+@keyframes fadeIn-data-v-b57d604a {
+0% {
+		opacity: 0;
+		-webkit-transform: translateY(400rpx);
+		        transform: translateY(400rpx)
+}
+100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0)
+}
+}
+/* 产品参数和领优惠券公用样式 */
+.Coupon-yin.data-v-b57d604a {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99;
+}
+.Coupon-view.data-v-b57d604a {
+	height: 780rpx;
+	padding-bottom: 30rpx;
+	background: #FFFFFF;
+	z-index: 999;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+}
+.Coupon-title.data-v-b57d604a {
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+	margin-bottom: 60rpx;
+}
+.parame-view.data-v-b57d604a {
+	font-size: 28rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 1px solid #F0F0F0;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	padding: 25rpx 15rpx;
+}
+.parame-left.data-v-b57d604a {
+	width: 120rpx;
+	padding-right: 25rpx;
+}
+.parame-right.data-v-b57d604a {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+

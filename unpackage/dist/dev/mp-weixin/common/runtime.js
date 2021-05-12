@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/components/commodity":1,"pages/components/loading":1,"pages/index/component/purchase":1,"pages/index/component/rank":1,"pages/index/component/search":1,"pages/index/component/swiper":1};
+/******/ 		var cssChunks = {"pages/components/commodity":1,"pages/components/loading":1,"pages/index/component/purchase":1,"pages/index/component/rank":1,"pages/index/component/search":1,"pages/index/component/swiper":1,"pages/details/components/addtocart":1,"pages/details/components/shopping":1,"pages/details/components/evaluate":1,"pages/details/components/parame":1,"pages/details/components/price":1,"pages/details/components/produce":1,"pages/details/components/top":1,"pages/components/showmodal":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"pages/components/commodity":"pages/components/commodity","pages/components/loading":"pages/components/loading","pages/index/component/purchase":"pages/index/component/purchase","pages/index/component/rank":"pages/index/component/rank","pages/index/component/search":"pages/index/component/search","pages/index/component/swiper":"pages/index/component/swiper"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"pages/components/commodity":"pages/components/commodity","pages/components/loading":"pages/components/loading","pages/index/component/purchase":"pages/index/component/purchase","pages/index/component/rank":"pages/index/component/rank","pages/index/component/search":"pages/index/component/search","pages/index/component/swiper":"pages/index/component/swiper","pages/details/components/addtocart":"pages/details/components/addtocart","pages/details/components/shopping":"pages/details/components/shopping","pages/details/components/evaluate":"pages/details/components/evaluate","pages/details/components/parame":"pages/details/components/parame","pages/details/components/price":"pages/details/components/price","pages/details/components/produce":"pages/details/components/produce","pages/details/components/top":"pages/details/components/top","pages/components/showmodal":"pages/components/showmodal"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

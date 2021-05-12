@@ -1,5 +1,14 @@
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "详情页",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "top": "/pages/details/components/top",
+    "price": "/pages/details/components/price",
+    "parame": "/pages/details/components/parame",
+    "evaluate": "/pages/details/components/evaluate",
+    "produce": "/pages/details/components/produce",
+    "shopping": "/pages/details/components/shopping",
+    "addtocart": "/pages/details/components/addtocart"
+  }
 }

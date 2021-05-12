@@ -28,7 +28,7 @@
 			}
 		},
 		onLoad() {
-
+			
 		},
 		components:{
 			Search,
@@ -39,7 +39,8 @@
 			Loading,
 		},
 		created() {
-			this.init()
+			this.init();
+			this.func();
 		},
 		onReachBottom() {
 			this.$refs.loading.loAd({
@@ -49,6 +50,14 @@
 			this.PullUp(this.page)
 		},
 		methods: {
+			//获取加密的token 供postman测试
+		   func(){
+			    let  Base64 = require('../../networks/base64.js').Base64
+			    const token = uni.getStorageSync('wxuser').token
+			    const base64 = Base64.encode(token+':')
+			    const authorization = 'Basic ' + base64
+			    console.log(authorization)
+		   },
 		   init(){
 				this.getbanner()
 				this.getrecom()

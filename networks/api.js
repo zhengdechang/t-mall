@@ -1,5 +1,5 @@
 //封装api
-let Base64 = require('./base64.js').Base64
+// let Base64 = require('./base64.js').Base64
 
 // const request = class{
 // 	 post(url,data){
@@ -73,8 +73,9 @@ let Base64 = require('./base64.js').Base64
 	
 	//加密token
 	function baseFun(){
-		const token = uni.getStorageSync('wxuser').token
-		const base64 = Base64.encode(token+':')
-		return 'Basic ' + base64
+		// const token = uni.getStorageSync('wxuser').token
+		// const base64 = Base64.encode(token+':')
+		// return 'Basic ' + base64
+	  	return 'Basic ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFhV1FpT2lKdlNVOHpNalZLTlZabU5FWkNUekZIV0hGQlRUVXRTWEoyZWkwMElpd2ljMk52Y0dVaU9qSXNJbWxoZENJNk1UWXlNRGN4TmpnNE5Td2laWGh3SWpveE5qSXdOekkwTURnMWZRLkFHbUx1RFBaeXVvUUVnQnRIVW5jd0Zpa0x6dHpuWmp0ZzF5bHdMdV9taWc6'
 	}
 	

@@ -46,8 +46,9 @@
             "path" : "pages/details/details",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "详情页",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
             }
             
         }

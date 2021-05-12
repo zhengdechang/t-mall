@@ -61,7 +61,7 @@
 		methods:{
 			enTails(id){
 				uni.navigateTo({
-					url:'../detail/details?id='+id
+					url:'../details/details?id='+id
 				})
 			}
 		}

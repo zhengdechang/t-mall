@@ -26,6 +26,9 @@
 				default:()=>[]
 			}
 		},
+		created() {
+			console.log(this.commodityData)
+		},
 		methods:{
 			enTails(id){
 				uni.navigateTo({

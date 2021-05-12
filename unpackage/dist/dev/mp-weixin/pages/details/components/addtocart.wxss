@@ -1,0 +1,245 @@
+/* 透明背景动画 */
+.anim.data-v-3d1ea62e {
+	-webkit-animation: implement-data-v-3d1ea62e;
+	        animation: implement-data-v-3d1ea62e;
+	/*动画名称*/
+	-webkit-animation-duration: 0.4s;
+	        animation-duration: 0.4s;
+	/*动画持续时间*/
+}
+@-webkit-keyframes implement-data-v-3d1ea62e {
+0% {
+		opacity: 0;
+}
+50% {
+		opacity: 0.5;
+}
+100% {
+		opacity: 1;
+}
+}
+@keyframes implement-data-v-3d1ea62e {
+0% {
+		opacity: 0;
+}
+50% {
+		opacity: 0.5;
+}
+100% {
+		opacity: 1;
+}
+}
+/* 底部淡入 */
+.coup-anim.data-v-3d1ea62e {
+	-webkit-animation: fadeIn-data-v-3d1ea62e 0.4s .2s ease both;
+	        animation: fadeIn-data-v-3d1ea62e 0.4s .2s ease both;
+}
+@-webkit-keyframes fadeIn-data-v-3d1ea62e {
+0% {
+		opacity: 0;
+		-webkit-transform: translateY(400rpx);
+		        transform: translateY(400rpx)
+}
+100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0)
+}
+}
+@keyframes fadeIn-data-v-3d1ea62e {
+0% {
+		opacity: 0;
+		-webkit-transform: translateY(400rpx);
+		        transform: translateY(400rpx)
+}
+100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0)
+}
+}
+/* 产品参数和领优惠券公用样式 */
+.Coupon-yin.data-v-3d1ea62e {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99;
+}
+.Coupon-view.data-v-3d1ea62e {
+	height: 780rpx;
+	padding-bottom: 30rpx;
+	background: #FFFFFF;
+	z-index: 999;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+}
+.Coupon-title.data-v-3d1ea62e {
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+	margin-bottom: 60rpx;
+}
+.padd.data-v-3d1ea62e {
+	padding: 15rpx;
+	margin-bottom: 90rpx;
+}
+.Coupon-view text.data-v-3d1ea62e {
+	display: block;
+}
+.commodity-view.data-v-3d1ea62e {
+	height: 200rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.commodity-left-img.data-v-3d1ea62e {
+	width: 200rpx;
+	height: 200rpx;
+}
+.commodity-left-img image.data-v-3d1ea62e {
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 10rpx;
+}
+.commodity-zh.data-v-3d1ea62e {
+	font-size: 27rpx;
+	color: #3d4245;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.commodity-zh view.data-v-3d1ea62e:nth-child(1) {
+	font-size: 35rpx;
+	color: #fe0036;
+}
+.commodity-zh view.data-v-3d1ea62e {
+	padding-top: 10rpx;
+	padding-left: 15rpx;
+}
+.choice.data-v-3d1ea62e {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.choice text.data-v-3d1ea62e {
+	padding-right: 8rpx;
+}
+.commodity-right-img.data-v-3d1ea62e {
+	width: 50rpx;
+	height: 50rpx;
+}
+.commodity-right-img image.data-v-3d1ea62e {
+	width: 50rpx;
+	height: 50rpx;
+}
+/* sku */
+.sku-view.data-v-3d1ea62e {
+	margin-top: 40rpx;
+	border-bottom: 1px solid #e5e5e5;
+}
+.sku-title.data-v-3d1ea62e {
+	font-size: 30rpx;
+	color: #051b28;
+	font-weight: bold;
+	margin-bottom: 20rpx;
+}
+.sku-mian image.data-v-3d1ea62e {
+	width: 45rpx;
+	height: 45rpx;
+	padding-right: 17rpx;
+}
+.sku-mian view.data-v-3d1ea62e {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 65rpx;
+	background: #f5f5f5;
+	border: 1rpx solid #f5f5f5;
+	border-radius: 20rpx;
+	padding: 0 14rpx;
+	margin-right: 30rpx;
+	margin-bottom: 30rpx;
+}
+.sku-mian.data-v-3d1ea62e {
+	font-size: 27rpx;
+	color: #051b28;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.sku-two view.data-v-3d1ea62e {
+	padding: 0 35rpx;
+}
+/* 购买数量 */
+.sku-height.data-v-3d1ea62e {
+	height: 120rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.numes.data-v-3d1ea62e {
+	margin: 0 !important;
+}
+.sku-mums-gight.data-v-3d1ea62e {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.sku-mums-gight view.data-v-3d1ea62e {
+	font-size: 30rpx;
+	color: #051b28;
+	font-weight: bold;
+	background: #f5f5f5;
+	border-radius: 10rpx;
+	width: 90rpx;
+	height: 70rpx;
+	line-height: 70rpx;
+	text-align: center;
+}
+.sku-mums-gight view.data-v-3d1ea62e:nth-child(2) {
+	background: none !important;
+}
+.determine.data-v-3d1ea62e {
+	z-index: 999;
+	font-size: 30rpx;
+	color: #FFFFFF;
+	background: #fe0036;
+	height: 90rpx;
+	line-height: 90rpx;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+/* 选了颜色加上边框 */
+.active.data-v-3d1ea62e {
+	border: 1rpx solid red !important;
+}
+

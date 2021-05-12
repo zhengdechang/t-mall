@@ -1,0 +1,10 @@
+
+.Product-view.data-v-5d4de90d {
+	margin-top: 20rpx;
+	padding-bottom: 90rpx;
+}
+.Product-view image.data-v-5d4de90d {
+	width: 100%;
+	vertical-align: bottom;
+}
+

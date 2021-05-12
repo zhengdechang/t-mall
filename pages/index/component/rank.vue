@@ -28,7 +28,7 @@
 		methods:{
 			enTails(id){
 				uni.navigateTo({
-					url:'../../details/details?id='+id
+					url:'../details/details?id='+id
 				})
 			}
 		}
